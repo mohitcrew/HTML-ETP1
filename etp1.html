@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grt{
+            text-align: center;
+            font-size: 35px;
+            font-style: italic;
+            margin-top: 300px;
+        }
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+<div class="con+">
+<label for="">Name:</label>
+<input type="text" placeholder="Enter name" id="nm"><br>
+<label for="">Choose Colour</label>
+<select name="colors" id="clr">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+</select><br>
+<button id="sbtn">Submit</button>
+
+</div>
+<div id="grt">
+
+
+</div>
+
+
+
+    <script>
+
+const clur = document.getElementById('clr');
+const sbtn = document.getElementById('sbtn');
+sbtn.addEventListener('click',function(){
+    const clor = clur.value;
+    document.body.style.backgroundColor = clor;
+    alert(nm.value+"Congrats You Successfully Enter name");
+    // document.body.write("<h1>Congrats You have entered Name</h1>"+"<h1>"+nm.value+"</h1>")
+});
+const nm = document.getElementById('nm');
+const btn=document.getElementById('sbtn');
+const gret=document.getElementById('grt');
+
+btn.addEventListener('click',function(){
+    const name=nm.value;
+    gret.textContent=("Hello "+name+" hi");
+})
+
+    </script>
+</body>
+</html>
+

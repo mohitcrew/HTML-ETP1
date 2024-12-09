@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+<div class="con+">
+<label for="">Name:</label>
+<input type="text" placeholder="Enter name" id="nm"><br>
+<label for="">Choose Colour</label>
+<select name="colors" id="clr">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="orange">orange</option>
+    <option value="purple">purple</option>
+</select><br>
+<button id="sbtn">Submit</button>
+<p id="text">Lovely Proffesional University</p>
+    
+</div>
+
+
+
+    <script>
+const nm = document.getElementById('nm');
+const clur = document.getElementById('clr');
+const sbtn = document.getElementById('sbtn');
+sbtn.addEventListener('click',function(){
+    const clor = clur.value;
+    text.style.color= clor;
+    alert(nm.value)
+
+
+});
+
+
+    </script>
+
+</body>
+</html>
